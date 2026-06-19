@@ -1,3 +1,22 @@
+// Вивід інструкції при завантаженні скрипта
+console.log(`
+================ ІНСТРУКЦІЯ ================
+Для розрахунку прямокутного трикутника викличте функцію triangle(),
+передавши їй 4 аргументи: значення 1, "тип 1", значення 2, "тип 2".
+
+Допустимі типи (у вигляді рядків):
+- "leg" - катет
+- "hypotenuse" - гіпотенуза
+- "adjacent angle" - прилеглий до катета кут (тільки в парі з "leg")
+- "opposite angle" - протилежний до катета кут (тільки в парі з "leg")
+- "angle" - один з гострих кутів (тільки в парі з "hypotenuse")
+
+Приклади виклику:
+triangle(4, "leg", 8, "hypotenuse");
+triangle(45, "angle", 10, "hypotenuse");
+============================================
+`);
+
 function triangle(val1, type1, val2, type2) {
     const validTypes = ["leg", "hypotenuse", "adjacent angle", "opposite angle", "angle"];
 
@@ -26,6 +45,7 @@ function triangle(val1, type1, val2, type2) {
         c = Math.sqrt(a * a + b * b);
         alpha = toDeg(Math.atan(a / b));
         beta = 90 - alpha;
+
     } else if (isPair("leg", "hypotenuse")) {
         let leg = getVal("leg");
         c = getVal("hypotenuse");
@@ -40,6 +60,7 @@ function triangle(val1, type1, val2, type2) {
         b = Math.sqrt(c * c - a * a);
         alpha = toDeg(Math.asin(a / c));
         beta = 90 - alpha;
+
     } else if (isPair("leg", "opposite angle")) {
         a = getVal("leg");
         alpha = getVal("opposite angle");
@@ -53,6 +74,7 @@ function triangle(val1, type1, val2, type2) {
         c = a / Math.sin(toRad(alpha));
         b = Math.sqrt(c * c - a * a);
         beta = 90 - alpha;
+
     } else if (isPair("leg", "adjacent angle")) {
         a = getVal("leg");
         beta = getVal("adjacent angle"); 
@@ -66,6 +88,7 @@ function triangle(val1, type1, val2, type2) {
         c = a / Math.cos(toRad(beta));
         b = Math.sqrt(c * c - a * a);
         alpha = 90 - beta;
+
     } else if (isPair("hypotenuse", "angle")) {
         c = getVal("hypotenuse");
         alpha = getVal("angle");
@@ -79,6 +102,7 @@ function triangle(val1, type1, val2, type2) {
         a = c * Math.sin(toRad(alpha));
         b = c * Math.cos(toRad(alpha));
         beta = 90 - alpha;
+
     } else {
         console.log("Помилка: Несумісна пара типів. Будь ласка, перечитайте інструкцію.");
         return "failed";

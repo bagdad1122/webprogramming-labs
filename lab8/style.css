@@ -3,11 +3,10 @@
 body { background-color: #f8f9fa; }
 
 /* === НАВІГАЦІЯ === */
-.navbar { background-color: #343a40; color: white; padding: 15px 20px; }
-.nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
-.logo { font-size: 24px; font-weight: bold; }
+.navbar { background-color: #343a40; padding: 15px 20px; }
+.nav-container { display: flex; justify-content: flex-end; align-items: center; max-width: 1200px; margin: 0 auto; }
 
-.nav-menu { list-style: none; display: flex; gap: 20px; }
+.nav-menu { list-style: none; display: flex; gap: 20px; width: 100%; justify-content: center; }
 .nav-menu a { color: white; text-decoration: none; font-size: 18px; transition: color 0.3s; }
 .nav-menu a:hover { color: #f1c40f; }
 
@@ -32,8 +31,7 @@ body { background-color: #f8f9fa; }
 .dot.active { background-color: white; }
 
 /* === АДАПТИВНІ ЗОБРАЖЕННЯ === */
-.adaptive-images-section { text-align: center; padding: 40px 20px; }
-.adaptive-images-section h2 { margin-bottom: 20px; color: #333; }
+.adaptive-images-section { padding: 40px 20px; }
 .image-grid { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
 .image-grid img { border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); max-width: 100%; height: auto; }
 
@@ -43,7 +41,9 @@ body { background-color: #f8f9fa; }
 
 /* MEDIUM DEVICES (< 768px) */
 @media screen and (max-width: 767.98px) {
-    /* Меню стає випадаючим (анімація через max-height) */
+    .nav-container { justify-content: flex-end; } /* Гамбургер притискається вправо */
+    
+    /* Меню стає випадаючим */
     .nav-menu { 
         flex-direction: column; 
         position: absolute; 
@@ -52,22 +52,21 @@ body { background-color: #f8f9fa; }
         width: 100%; 
         background-color: #343a40; 
         overflow: hidden;
-        max-height: 0; /* Приховано за замовчуванням */
-        transition: max-height 0.4s ease-out; /* Ефект "випадання" */
+        max-height: 0; 
+        transition: max-height 0.4s ease-out; 
         z-index: 100;
         gap: 0;
     }
-    .nav-menu.open { max-height: 250px; } /* Розгортається при додаванні класу через JS */
+    .nav-menu.open { max-height: 250px; } 
     .nav-menu li { text-align: center; border-top: 1px solid #495057; }
     .nav-menu a { display: block; padding: 15px; }
     
-    .hamburger { display: flex; } /* Показуємо Гамбургер */
-
-    .large-only { display: none; } /* Ховаємо Large зображення */
+    .hamburger { display: flex; } 
+    .large-only { display: none; } 
 }
 
 /* LARGE DEVICES (>= 768px) */
 @media screen and (min-width: 768px) {
-    .medium-only { display: none; } /* Ховаємо Medium зображення */
-    .nav-menu { max-height: none !important; } /* Скидаємо обмеження висоти для ПК */
+    .medium-only { display: none; } 
+    .nav-menu { max-height: none !important; justify-content: center; } 
 }

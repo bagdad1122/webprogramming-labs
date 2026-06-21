@@ -15,7 +15,7 @@
         }
 
         if (undefinedCount > 0) {
-            console.log(`[Інфо] Знайдено розріджених/undefined елементів: ${undefinedCount}. Їх перенесено в кінець.`);
+            console.log(`Знайдено розріджених елементів: ${undefinedCount}. Їх перенесено в кінець.`);
         }
         
         return { cleanArr, undefinedCount };

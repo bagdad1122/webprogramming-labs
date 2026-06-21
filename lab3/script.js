@@ -1,7 +1,7 @@
 (function () {
   var names = ["Bill", "John", "Jen", "Jason", "Paul", "Frank", "Steven", "Larry", "Paula", "Laura", "Jim"];
 
-  console.log("=== ОСНОВНЕ ЗАВДАННЯ (1.2.2) ===");
+  console.log("=== (1.2.2) ===");
   for (var i = 0; i < names.length; i++) {
     
     var firstLetter = names[i].charAt(0).toLowerCase();
@@ -13,9 +13,9 @@
     }
   }
 
-  console.log("\n=== ДОДАТКОВИЙ ФУНКЦІОНАЛ (1.2.3) ===");
-  console.log("Анотація: Цей алгоритм вираховує суму ASCII-кодів усіх літер імені.");
-  console.log("Якщо сума парна — виводимо 'Hello', якщо непарна — виводимо 'Good Bye'.");
+  console.log("\n=== (1.2.3) ===");
+  console.log("Цей алгоритм вираховує суму ASCII-кодів усіх літер імені.");
+  console.log("Якщо сума парна — виводимо 'Hello' якщо непарна — виводимо 'Good Bye'.");
   console.log("--------------------------------------------------");
 
   for (var i = 0; i < names.length; i++) {

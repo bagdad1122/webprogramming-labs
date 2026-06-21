@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Hunt Game</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
 
+        #menuArea {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+        }
+
+        #gameArea {
+            display: none;
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #stats {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+
+        #stats p {
+            margin: 5px 0;
+        }
+
+        #targetBox {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="menuArea">
+        <h1>Pixel Hunt</h1>
+        <div class="controls">
+            <label>Choose difficulty:</label>
+            <select id="difficultySelect">
+                <option value="">--Please choose an option--</option>
+                <option value="2000">Lazy</option>
+                <option value="1000">Normal</option>
+                <option value="600">Catch me if you can</option>
+            </select>
+
+            <label>Choose color:</label>
+            <select id="colorSelect">
+                <option value="">--Please choose an option--</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+            </select>
+
+            <button id="startBtn">Start</button>
+        </div>
+    </div>
+
+    <div id="gameArea">
+        <div id="stats">
+            <p id="scoreDisplay">score: 0</p>
+            <p id="timeDisplay">time left for click: </p>
+        </div>
+        <div id="targetBox"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

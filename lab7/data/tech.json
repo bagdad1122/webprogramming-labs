@@ -5,29 +5,33 @@
       "id": 101,
       "name": "MacBook Air (M4 chip)",
       "shortname": "macbook-m4",
-      "description": "Ідеальний вибір для розробки, підтримує компіляцію проектів без нагріву.",
-      "price": "1299 USD"
+      "description": "Ідеальний вибір для розробки, підтримує компіляцію найважчих проектів без нагріву.",
+      "price": "1299 USD",
+      "image": "images/macbook-m4.jpg"
     },
     {
       "id": 102,
       "name": "Google Pixel 8",
       "shortname": "pixel-8",
-      "description": "Тестовий девайс для перевірки Android-застосунків.",
-      "price": "699 USD"
+      "description": "Тестовий девайс для перевірки Android-застосунків (Jetpack Compose, Room).",
+      "price": "699 USD",
+      "image": "images/pixel-8.jpg"
     },
     {
       "id": 103,
       "name": "Монітор 4K 27\"",
       "shortname": "monitor-4k",
-      "description": "Розширення робочого простору для зручної роботи з Android Studio.",
-      "price": "350 USD"
+      "description": "Розширення робочого простору для зручної роботи з кодом.",
+      "price": "350 USD",
+      "image": "images/monitor-4k.jpg"
     },
     {
       "id": 104,
       "name": "Механічна клавіатура",
       "shortname": "mech-key",
       "description": "Ергономічна клавіатура з тактильними перемикачами.",
-      "price": "120 USD"
+      "price": "120 USD",
+      "image": "images/mech-keyboard.jpg"
     }
   ]
 }

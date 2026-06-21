@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights Out</title>
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; margin-top: 50px; }
+        
+        .controls { margin-bottom: 20px; }
+        select, button { padding: 5px 10px; font-size: 16px; margin-right: 10px; }
 
+        .stats { margin-bottom: 20px; font-size: 18px; }
+        .stats span { font-weight: bold; }
+
+        #board {
+            display: grid;
+            grid-template-columns: repeat(5, 60px);
+            grid-template-rows: repeat(5, 60px);
+            gap: 5px;
+            background-color: #222;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .cell {
+            background-color: #444;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s, box-shadow 0.2s;
+        }
+
+        .cell.on {
+            background-color: #f1c40f;
+            box-shadow: 0 0 15px #f1c40f;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Гра "Lights Out"</h1>
+
+    <div class="controls">
+        <select id="levelSelect">
+            <option value="levelA">Рівень A (7 кроків)</option>
+            <option value="levelB">Рівень B (8 кроків)</option>
+            <option value="levelC">Рівень C (9 кроків)</option>
+        </select>
+        <button id="loadBtn">Завантажити рівень</button>
+    </div>
+
+    <div class="stats">
+        Кроків зроблено: <span id="stepsCount">0</span> / Мінімум для перемоги: <span id="minStepsCount">0</span>
+    </div>
+
+    <div id="board"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

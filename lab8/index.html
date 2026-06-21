@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🔋 EV-Charging</div>
+            
+            <button class="hamburger" id="hamburger-btn">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#">⚡ Електромобілі</a></li>
+                <li><a href="#">🔌 Станції зарядки</a></li>
+                <li><a href="#">🗺️ Мапа</a></li>
+                <li><a href="#">📞 Контакти</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="carousel-container">
+            <div class="carousel-track" id="carousel-track">
+                <div class="carousel-slide">
+                    <img src="https://placehold.co/1200x500/0d6efd/white?text=Electric+Vehicles+Catalog" alt="Слайд 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://placehold.co/1200x500/198754/white?text=Fast+DC+Charging+Stations" alt="Слайд 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://placehold.co/1200x500/ffc107/black?text=Find+Chargers+in+Ukraine" alt="Слайд 3">
+                </div>
+            </div>
+
+            <button class="carousel-btn prev-btn" id="prev-btn">&#10094;</button>
+            <button class="carousel-btn next-btn" id="next-btn">&#10095;</button>
+
+            <div class="carousel-indicators" id="indicators">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </section>
+
+        <section class="adaptive-images-section">
+            
+            <div class="large-only">
+                <h2>Видно ТІЛЬКИ на Large екранах (≥768px)</h2>
+                <div class="image-grid">
+                    <img src="https://placehold.co/400x300/6f42c1/white?text=Large+Screen+Image+1" alt="Large 1">
+                    <img src="https://placehold.co/400x300/d63384/white?text=Large+Screen+Image+2" alt="Large 2">
+                </div>
+            </div>
+
+            <div class="medium-only">
+                <h2>Видно ТІЛЬКИ на Medium екранах (&lt;768px)</h2>
+                <div class="image-grid">
+                    <img src="https://placehold.co/400x300/fd7e14/white?text=Medium+Screen+Image+1" alt="Medium 1">
+                    <img src="https://placehold.co/400x300/20c997/white?text=Medium+Screen+Image+2" alt="Medium 2">
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

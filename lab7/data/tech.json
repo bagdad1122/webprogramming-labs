@@ -1,37 +1,37 @@
 {
-  "categoryName": "Техніка для розробника",
+  "categoryName": "Електротранспорт та зарядки",
   "items": [
     {
-      "id": 101,
-      "name": "MacBook Air (M4 chip)",
-      "shortname": "macbook-m4",
-      "description": "Ідеальний вибір для розробки, підтримує компіляцію найважчих проектів без нагріву.",
-      "price": "1299 USD",
-      "image": "images/macbook-m4.jpg"
+      "id": 301,
+      "name": "BMW i5 M60",
+      "shortname": "bmw-i5",
+      "description": "Флагманський електромобіль з 800V архітектурою. (Перший внесок).",
+      "price": "15000 EUR",
+      "image": "images/bmw-i5.jpg"
     },
     {
-      "id": 102,
-      "name": "Google Pixel 8",
-      "shortname": "pixel-8",
-      "description": "Тестовий девайс для перевірки Android-застосунків (Jetpack Compose, Room).",
-      "price": "699 USD",
-      "image": "images/pixel-8.jpg"
+      "id": 302,
+      "name": "Зарядна станція DC 400kW",
+      "shortname": "charger-400kw",
+      "description": "Комерційна станція швидкісної зарядки для бізнесу.",
+      "price": "35000 EUR",
+      "image": "images/charger-400kw.jpg"
     },
     {
-      "id": 103,
-      "name": "Монітор 4K 27\"",
-      "shortname": "monitor-4k",
-      "description": "Розширення робочого простору для зручної роботи з кодом.",
-      "price": "350 USD",
-      "image": "images/monitor-4k.jpg"
+      "id": 303,
+      "name": "Кабель Type 2",
+      "shortname": "cable-type2",
+      "description": "Трифазний зарядний кабель, витримує до 22kW.",
+      "price": "250 EUR",
+      "image": "images/type2-cable.jpg"
     },
     {
-      "id": 104,
-      "name": "Механічна клавіатура",
-      "shortname": "mech-key",
-      "description": "Ергономічна клавіатура з тактильними перемикачами.",
-      "price": "120 USD",
-      "image": "images/mech-keyboard.jpg"
+      "id": 304,
+      "name": "Домашній Wallbox 11kW",
+      "shortname": "wallbox",
+      "description": "Настінна станція для безпечного заряджання електромобіля вдома.",
+      "price": "600 EUR",
+      "image": "images/wallbox.jpg"
     }
   ]
 }

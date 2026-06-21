@@ -1,1 +1,33 @@
-
+{
+  "categoryName": "Техніка для розробника",
+  "items": [
+    {
+      "id": 101,
+      "name": "MacBook Air (M4 chip)",
+      "shortname": "macbook-m4",
+      "description": "Ідеальний вибір для розробки, підтримує компіляцію проектів без нагріву.",
+      "price": "1299 USD"
+    },
+    {
+      "id": 102,
+      "name": "Google Pixel 8",
+      "shortname": "pixel-8",
+      "description": "Тестовий девайс для перевірки Android-застосунків.",
+      "price": "699 USD"
+    },
+    {
+      "id": 103,
+      "name": "Монітор 4K 27\"",
+      "shortname": "monitor-4k",
+      "description": "Розширення робочого простору для зручної роботи з Android Studio.",
+      "price": "350 USD"
+    },
+    {
+      "id": 104,
+      "name": "Механічна клавіатура",
+      "shortname": "mech-key",
+      "description": "Ергономічна клавіатура з тактильними перемикачами.",
+      "price": "120 USD"
+    }
+  ]
+}

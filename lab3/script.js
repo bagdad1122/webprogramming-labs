@@ -26,9 +26,9 @@
     }
 
     if (asciiSum % 2 === 0) {
-      helloSpeaker.speak(names[i] + " (Сума ASCII: " + asciiSum + " -> Парна)");
+      helloSpeaker.speak(names[i] + " (Сума - " + asciiSum + " - Парна)");
     } else {
-      byeSpeaker.speak(names[i] + " (Сума ASCII: " + asciiSum + " -> Непарна)");
+      byeSpeaker.speak(names[i] + " (Сума - " + asciiSum + " - Непарна)");
     }
   }
 

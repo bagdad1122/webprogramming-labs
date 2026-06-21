@@ -1,1 +1,33 @@
-
+{
+  "categoryName": "Електротранспорт та зарядки",
+  "items": [
+    {
+      "id": 301,
+      "name": "BMW i5 M60",
+      "shortname": "bmw-i5",
+      "description": "Флагманський електромобіль з 800V.",
+      "price": "100000 EUR"
+    },
+    {
+      "id": 302,
+      "name": "Зарядна станція DC 400kW",
+      "shortname": "charger-400kw",
+      "description": "Комерційна станція швидкісної зарядки для бізнесу.",
+      "price": "35000 EUR"
+    },
+    {
+      "id": 303,
+      "name": "Кабель Type 2",
+      "shortname": "cable-type2",
+      "description": "Трифазний зарядний кабель, витримує до 22kW.",
+      "price": "250 EUR"
+    },
+    {
+      "id": 304,
+      "name": "Домашній Wallbox 11kW",
+      "shortname": "wallbox",
+      "description": "Настінна станція для безпечного заряджання електромобіля вдома.",
+      "price": "600 EUR"
+    }
+  ]
+}

@@ -1,20 +1,37 @@
-[
-  {
-    "id": 1,
-    "name": "Техніка для розробника",
-    "shortname": "tech",
-    "notes": "Високопродуктивні інструменти для компіляції та тестування коду."
-  },
-  {
-    "id": 2,
-    "name": "Спортивне спорядження",
-    "shortname": "sports",
-    "notes": "Професійний інвентар для активного відпочинку."
-  },
-  {
-    "id": 3,
-    "name": "Електротранспорт",
-    "shortname": "ev",
-    "notes": "Сучасні рішення для екологічної мобільності."
-  }
-]
+{
+  "categoryName": "Електротранспорт та зарядки",
+  "items": [
+    {
+      "id": 301,
+      "name": "BMW i5 M60",
+      "shortname": "bmw-i5",
+      "description": "Флагманський електромобіль з 800V архітектурою. (Перший внесок).",
+      "price": "15000 EUR",
+      "image": "images/bmw-i5.jpg"
+    },
+    {
+      "id": 302,
+      "name": "Зарядна станція DC 400kW",
+      "shortname": "charger-400kw",
+      "description": "Комерційна станція швидкісної зарядки для бізнесу.",
+      "price": "35000 EUR",
+      "image": "images/charger-400kw.jpg"
+    },
+    {
+      "id": 303,
+      "name": "Кабель Type 2",
+      "shortname": "cable-type2",
+      "description": "Трифазний зарядний кабель, витримує до 22kW.",
+      "price": "250 EUR",
+      "image": "images/type2-cable.jpg"
+    },
+    {
+      "id": 304,
+      "name": "Домашній Wallbox 11kW",
+      "shortname": "wallbox",
+      "description": "Настінна станція для безпечного заряджання електромобіля вдома.",
+      "price": "600 EUR",
+      "image": "images/wallbox.jpg"
+    }
+  ]
+}
